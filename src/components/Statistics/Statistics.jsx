@@ -1,6 +1,7 @@
 import propTypes from 'prop-types';
 import css from './Statistics.module.css';
 
+
 export const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
     <ul className={css.feedbackList}>
     <li className={css.feedbackListItem}>Good: {good}</li>

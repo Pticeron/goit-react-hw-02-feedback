@@ -5,10 +5,10 @@ import css from './FeedbackOptions.module.css';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => (
     <div>
-    {options.map((option, index) => (
+    {options.map((option) => (
         <button
-        key={index}
-        onClick={() => onLeaveFeedback(option)}
+        key={option}
+        onClick={() => onLeaveFeedback(option.toLowerCase())}
         className={css.feedbackBtn}
         >
         {option}
